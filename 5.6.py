@@ -1,11 +1,26 @@
 print('Калькулятор площади треугольника')
 print('=' * 35)
 
-def calculate_distance(x1, y1, x2, y2 ):
+def calculate_distance(x1, y1, x2, y2):
+    """
+    Arguments:
+         x1, y1: координаты вершины А
+         x2, y2: координаты вершины В
+
+    Returns: разность дистанций
+    """
     return x1 - y1, x2 - y2
 
 import math
 def calculate_triangle_area(a, b, c):
+    """
+    Arguments:
+        a: первая сторона треугольника
+        b: вторая сторона треугольника
+        c: третья сторона треугольника
+
+    Returns: площадь треугольника
+    """
     p = a + b + c
     return math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
 
